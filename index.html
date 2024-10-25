@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script src="assets/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1> SPLI <br>TTER</h1>
+        </div>
+        <div class="main-content">
+            <div class="bill-input">
+                <h2>Bill</h2>
+                <input type="text" class="get-input" id="billInput" value="">
+                <div class="dolar-icon">
+                    <img src="assets/images/dolar-icon.svg" alt="">
+                </div>
+            </div>
+            <div class="tip-list">
+                <h2>Select Tip %</h2>
+                <div class="selections">
+                    <div class="selection-item" >5%</div>
+                    <div class="selection-item">10%</div>
+                    <div class="selection-item">15%</div>
+                    <div class="selection-item">25%</div>
+                    <div class="selection-item">50%</div>
+                    <div class="selection-item custom-input"> <input type="text" placeholder="Custom" id="customInput" value=""
+                            class="get-custom-input"></div>
+                </div>
+            </div>
+            <div class="many-people">
+                <h2>Number of People</h2>
+                <input type="text" class="input-people" id="peopleInput" value="">
+                <div class="people-icon">
+                    <img src="assets/images/people-icon.svg" alt="" >
+                </div>
+            </div>
+            <div class="final-calculation">
+                <div class="tip-amount">
+                    <div class="amount-title" >
+                        <h2 >Tip Amount</h2>
+                        <p>/ person</p>
+                    </div>
+                    <div class="amount-price " id="tipPerPerson">
+                        <p>$0</p>
+                    </div>
+                </div>
+                <div class="tip-amount s">
+                    <div class="amount-title">
+                        <h2>Total</h2>
+                        <p>/ person</p>
+                    </div>
+                    <div class="amount-price" id="totalPercent">
+                        <p>$0</p>
+                    </div>
+                </div>
+                <div class="btn-reset">
+                    <button id="btnReset" onclick="resetNumbers()">
+                        RESET
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
